@@ -1,6 +1,6 @@
 # lxc_works
-/************ README for LXC and launchService Setup ****************/
-/************ Prerequsites - Ubuntu-20.04 Recommended ***************/
+LXC container creation and launch Setup
+Prerequsites - Ubuntu-20.04 Recommended, below steps are verified on ubuntu 20.04
 
 # 1. Install lxc and create first container on x86.
 https://linuxcontainers.org/lxc/getting-started/
