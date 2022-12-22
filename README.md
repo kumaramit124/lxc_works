@@ -2,9 +2,7 @@
 /************ README for LXC and launchService Setup ****************/
 /************ Prerequsites - Ubuntu-20.04 Recommended ***************/
 
-======================================================================
-1. Install lxc and create first container on x86.
-======================================================================
+# 1. Install lxc and create first container on x86.
 https://linuxcontainers.org/lxc/getting-started/
 - sudo apt-get install lxc
 Create the ~/.config/lxc directory if it doesn't exist
@@ -31,25 +29,23 @@ Check the container info using
 - sudo lxc-stop -n my-container
 - sudo lxc-destroy -n my-container
 
-==================================================================
-2. Install all the lxc development dependent packages.
-==================================================================
+
+# 2. Install all the lxc development dependent packages.
 - sudo apt-get install lxc-dev
 - sudo apt-get install libpopt-dev
 - sudo apt-get install liblxc-dev
 - sudo apt-get install libconfig-dev
 
-=================================================================
-3. Clone launchService from
-=================================================================
+# 3. Clone launchService from
+
 https://github.netgear.com/seal/launchService
 Install Doxygen
 - sudo apt-get install -y doxygen
 - sudo apt-get install -y graphviz
 
-============================================================================
-4. Build the launchService(Recommended to build it as super user- "sudo su")
-============================================================================
+
+# 4. Build the launchService(Recommended to build it as super user- "sudo su")
+
 - cd launchService
 - mkdir build
 - cd build
@@ -67,9 +63,9 @@ To launch the build container run
 - sudo launchService example
 (Note: This will not work as example container created using busybox, so follow the below steps 5 and 6)
 
-=======================================================================
-5. Add your own container under the launchService.
-=======================================================================
+
+# 5. Add your own container under the launchService.
+
 Go to launchService folder
 - cd launchService
 From Step 1 lxc created container needs to be copied under launchService for a new container name "testContainer"
@@ -91,9 +87,9 @@ USE_SOURCE_PERMISSIONS )
 
 Follow the build steps from point 4.
 
-===========================================================================================
-6. After build the new container from the lanucher, run the container with "launchService"
-===========================================================================================
+
+# 6. After build the new container from the lanucher, run the container with "launchService"
+
 - sudo launchService testContainer
 - sudo lxc-ls
 - sudo lxc-info -n testContainer
