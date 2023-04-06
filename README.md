@@ -38,7 +38,6 @@ Check the container info using
 
 # 3. Clone launchService from
 
-https://github.netgear.com/seal/launchService
 Install Doxygen
 - sudo apt-get install -y doxygen
 - sudo apt-get install -y graphviz
